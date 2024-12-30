@@ -1,0 +1,18 @@
+# ==================== Emojis ====================
+# 🎉  : 初めてのコミット（Initial Commit）
+# ✨  : 新機能（New Feature）
+# 🐛  : バグ修正（Bugfix）
+# ♻️  : リファクタリング(Refactoring)
+# 📚  : ドキュメント（Documentation）
+# 🎨  : デザインUI/UX(Accessibility)
+# 🐎  : パフォーマンス（Performance）
+# 🔧  : ツール（Tooling）
+# 🚨  : テスト（Tests）
+# 💩  : 非推奨追加（Deprecation）
+# 🗑️  : 削除（Removal）
+# 🚧  : 作業中 (WIP)
+
+# ==================== Format ====================
+# :emoji: Subject
+#
+# Commit body...
