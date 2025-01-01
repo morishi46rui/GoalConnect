@@ -4,12 +4,10 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-	"net/http"
 
-	"github.com/gin-gonic/gin"
+	"goalconnect-backend/routes"
 	_ "github.com/lib/pq"
 )
-
 func main() {
 	dsn := "host=db user=admin password=secret dbname=goalconnect port=5432 sslmode=disable"
 	db, err := sql.Open("postgres", dsn)
@@ -23,13 +21,6 @@ func main() {
 	}
 	fmt.Println("Connected to the database successfully!")
 
-	r := gin.Default()
-
-	r.GET("/health", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{
-			"status": "OK",
-		})
-	})
-
+	r := routes.SetupRouter()
 	r.Run(":8080")
 }
