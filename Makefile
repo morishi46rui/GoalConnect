@@ -1,3 +1,4 @@
+# 全てコマンドはプロジェクトルートで実行すること
 # 構築
 build: 
 	docker compose build
@@ -33,3 +34,8 @@ init:
 	cp ./.env.example ./.env && \
 	make buildn && \
 	make upd
+
+# フロントエンド
+front:
+	cd ./frontend && \
+	npm start
