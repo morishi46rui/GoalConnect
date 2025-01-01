@@ -61,8 +61,7 @@
 
 4. フロントエンドのExpoを起動します:
    ```bash
-   cd frontend
-   npm start
+   make front
    ```
 
 ---
