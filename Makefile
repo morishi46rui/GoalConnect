@@ -44,3 +44,11 @@ front:
 api:
 	cd ./backend && \
 	swag init
+
+update-routes:
+	cd ./backend && \
+	go run ./scripts/update_routes.go
+
+generate:
+	make api && \
+	make update-routes
