@@ -42,8 +42,8 @@ front:
 
 # バックエンド
 api:
-	cd ./backend/cmd/app && \
-	swag init --output ../../docs --parseDependency --parseInternal
+	cd ./backend && \
+	swag init --output ./docs --parseDependency --parseInternal
 
 update-routes:
 	cd ./backend && \
