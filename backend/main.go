@@ -5,9 +5,16 @@ import (
 	"fmt"
 	"log"
 
+	_ "goalconnect-backend/docs"
 	"goalconnect-backend/routes"
+
 	_ "github.com/lib/pq"
 )
+
+// @title GoalConnect API
+// @version 1.0
+// @description サッカーチーム向けアプリケーションのAPIです。
+
 func main() {
 	dsn := "host=db user=admin password=secret dbname=goalconnect port=5432 sslmode=disable"
 	db, err := sql.Open("postgres", dsn)

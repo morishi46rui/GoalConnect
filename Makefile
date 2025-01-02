@@ -39,3 +39,8 @@ init:
 front:
 	cd ./frontend && \
 	npm start
+
+# バックエンド
+api:
+	cd ./backend && \
+	swag init

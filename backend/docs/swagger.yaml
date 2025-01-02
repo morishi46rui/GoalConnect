@@ -1,0 +1,29 @@
+definitions:
+  handlers.HealthResponse:
+    properties:
+      status:
+        example: OK
+        type: string
+    type: object
+info:
+  contact: {}
+  description: サッカーチーム向けアプリケーションのAPIです。
+  title: GoalConnect API
+  version: "1.0"
+paths:
+  /health:
+    get:
+      consumes:
+      - application/json
+      description: サーバーの状態を確認します
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handlers.HealthResponse'
+      summary: ヘルスチェック
+      tags:
+      - Health
+swagger: "2.0"
