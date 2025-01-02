@@ -10,8 +10,8 @@ import (
 )
 
 func main() {
-	handlersDir := "./handlers"
-	routerFile := "./routes/router.go"
+	handlersDir := "./internal/handlers"
+	routerFile := "./internal/routes/router.go"
 
 	// パターン: @Router /path [method]
 	routerPattern := regexp.MustCompile(`@Router\s+(/[\w/-]*)\s+\[([a-z]+)\]`)
@@ -67,7 +67,7 @@ func generateRouterCode(endpoints map[string]string) string {
 
 import (
 	"github.com/gin-gonic/gin"
-	"goalconnect-backend/handlers"
+	"goalconnect-backend/internal/handlers"
 
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"

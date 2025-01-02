@@ -17,7 +17,7 @@ type HealthResponse struct {
 // @Tags Health
 // @Accept json
 // @Produce json
-// @Success 200 {object} HealthResponse
+// @Success 200 {object} backend/internal/handlers.HealthResponse
 // @Router /health [get]
 func HealthCheck(c *gin.Context) {
 	response := HealthResponse{

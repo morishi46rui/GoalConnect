@@ -6,7 +6,7 @@ import (
 	"log"
 
 	_ "goalconnect-backend/docs"
-	"goalconnect-backend/routes"
+	"goalconnect-backend/internal/routes"
 
 	_ "github.com/lib/pq"
 )
