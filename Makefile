@@ -52,3 +52,8 @@ update-routes:
 generate:
 	make api && \
 	make update-routes
+
+# テスト
+test:
+	cd ./backend && \
+	go test -v ./...
